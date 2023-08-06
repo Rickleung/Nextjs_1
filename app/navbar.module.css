@@ -1,0 +1,34 @@
+.navbar {
+    width: 100%;
+    background-color: #333;
+overflow: auto;
+z-index: 1000; /* Make sure this value is higher than the video's z-index */
+    position: relative; 
+}
+
+.navbar a {
+float: left;
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.active {
+background-color: #4CAF50;
+color: white;
+}
+
+@media screen and (max-width: 500px) {
+.navbar a {
+    float: none;
+    display: block;
+}
+}
